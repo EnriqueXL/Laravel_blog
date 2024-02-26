@@ -11,8 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('users', function (Blueprint $table) {
-            //
+        Schema::table('nombre_de_tu_tabla', function (Blueprint $table) {
+            // cambiar campos nulleables y cambiamos el maximo permitido
+            $table->string('nombre_de_columna', 50)->nullable()->change();
         });
     }
 
@@ -21,8 +22,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('users', function (Blueprint $table) {
-            //
+        Schema::table('nombre_de_tu_tabla', function (Blueprint $table) {
+            $table->string('nombre_de_columna', 255)->nullable(false)->change();
         });
     }
 };
