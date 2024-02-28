@@ -17,3 +17,5 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+# .DS_Store Archivo creado por el sistema MacOS para personalizar la carpeta.
+.DS_Store
